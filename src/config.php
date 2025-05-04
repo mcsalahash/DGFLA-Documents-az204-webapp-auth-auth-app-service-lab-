@@ -8,12 +8,12 @@ $authProviders = [
     'microsoft' => [
         'client_id' => getenv('MICROSOFT_CLIENT_ID'),
         'tenant' => getenv('MICROSOFT_TENANT_ID'),
-        'redirect_uri' => getenv('APP_URL') . 'src/auth/callback.php?provider=microsoft',
+        'redirect_uri' => getenv('APP_URL') . '/src/auth/callback.php?provider=microsoft',
         'scope' => 'openid profile email'
     ],
     'google' => [
         'client_id' => getenv('GOOGLE_CLIENT_ID'),
-        'redirect_uri' => getenv('APP_URL') . 'src/auth/callback.php?provider=google',
+        'redirect_uri' => getenv('APP_URL') . '/src/auth/callback.php?provider=google',
         'scope' => 'openid profile email'
     ],
     'custom' => [
