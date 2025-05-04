@@ -1,0 +1,13 @@
+{
+    "name": "auth-app-service-lab/app",
+    "description": "Lab d'authentification pour Azure App Service",
+    "type": "project",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
