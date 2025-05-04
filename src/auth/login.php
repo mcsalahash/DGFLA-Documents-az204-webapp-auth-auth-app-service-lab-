@@ -16,7 +16,7 @@ switch ($provider) {
         $_SESSION['state'] = bin2hex(random_bytes(16));
         
         // Construction de l'URL d'autorisation
-        $authUrl = 'https://login.microsoftonline.com/' . $providerConfig['tenant'] . '/oauth2/v2.0/authorize';
+        $authUrl = 'https://login.microsoftonline.com' . $providerConfig['tenant'] . '/oauth2/v2.0/authorize';
         $authUrl .= '?client_id=' . urlencode($providerConfig['client_id']);
         $authUrl .= '&response_type=code';
         $authUrl .= '&redirect_uri=' . urlencode($providerConfig['redirect_uri']);
