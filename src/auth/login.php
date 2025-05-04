@@ -9,7 +9,7 @@ if ($provider === 'microsoft') {
     $_SESSION['state'] = bin2hex(random_bytes(16));
     
     // Valeurs codées en dur pour le test
-    $tenant = '808efd5-5728-459b-800c-968535a011a1';
+    $tenant = '808ef6d5-5728-459b-800c-968535a011a1';
     $clientId = '3cc14f09-1cd6-4717-981f-3482bc2fea35';
     $redirectUri = 'https://authentiks.azurewebsites.net/src/auth/callback.php?provider=microsoft';
     $scope = 'openid profile email';
