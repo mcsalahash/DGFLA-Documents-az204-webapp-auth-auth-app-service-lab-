@@ -47,3 +47,4 @@ switch ($provider) {
         include '../views/custom-login.php';
         exit;
 }
+?>
